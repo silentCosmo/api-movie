@@ -13,7 +13,7 @@ function Home() {
   return (
     <div>
 
-      <section className='grid md:grid-cols-5 grid-cols-2 gap-5 p-5'>
+      <section className='grid md:grid-cols-5 grid-cols-2 gap-5 py-3 px-2 md:p-5'>
         {
           movies.map((movie)=>{
             

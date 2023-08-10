@@ -15,7 +15,7 @@ function MovieCard({ movie }) {
     >
       <img
         src={data.image?.medium ? data.image.medium : filler}
-        className="w-48 h-64 rounded-t-md"
+        className="md:w-48 h-64 rounded-t-md"
         alt="movie-poster"
       />
       <div className="rounded-b-md mt-1 p-2">
