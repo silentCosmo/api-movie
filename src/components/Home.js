@@ -6,14 +6,14 @@ function Home() {
   
   const [movies,setMovies] = useState([])
   const getMovies = async ()=>{
-    await instance.get('search/shows/?q=all').then((res)=>{console.log('hi');;setMovies(res.data)}).catch((err)=>{alert(err)})
+    await instance.get('search/shows/?q=all').then((res)=>{setMovies(res.data)}).catch((err)=>{alert(err)})
   }
   
   useEffect(()=>{getMovies()},[])
   return (
-    <div>
+    <div className='py-4 px-2 md:pl-14'>
 
-      <section className='grid md:grid-cols-5 grid-cols-2 gap-5 py-3 px-2 md:p-5'>
+      <section className='grid md:grid-cols-5 grid-cols-2 gap-4 md:p-5'>
         {
           movies.map((movie)=>{
             

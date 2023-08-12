@@ -11,11 +11,11 @@ function MovieCard({ movie }) {
   return (
     <Link
       to={"/" + data.id}
-      className="bg-white w-48 border border-zinc-200 rounded-t-md hover:shadow-md hover:scale-95 duration-200"
+      className="bg-white w-44 border border-zinc-200 rounded-t-md hover:shadow-md hover:scale-95 duration-200"
     >
       <img
         src={data.image?.medium ? data.image.medium : filler}
-        className="w-full h-64 rounded-t-md"
+        className="w-full h-60 rounded-t-md"
         alt="movie-poster"
       />
       <div className="rounded-b-md mt-1 p-2">
