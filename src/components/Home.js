@@ -6,7 +6,7 @@ function Home() {
   
   const [movies,setMovies] = useState([])
   const getMovies = async ()=>{
-    await instance.get('search/shows/?q=all').then((res)=>{setMovies(res.data)}).catch((err)=>{alert(err)})
+    await instance.get('search/shows/?q=all').then((res)=>{console.log('hi');;setMovies(res.data)}).catch((err)=>{alert(err)})
   }
   
   useEffect(()=>{getMovies()},[])
